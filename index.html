@@ -27,9 +27,11 @@
 </head>
 
 <body>
+    <!-- header section  -->
     <header class="bg-white sm:px-3">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <a href="#" class="text-2xl font-bold text-green-500">Rinterio</a>
+            <a href="#" class="text-2xl font-bold text-black"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-lime-500 p-2 rounded-full inline-block text-white"> <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg> Rinterio </a>
+            <!-- <a href="#" class="text-2xl font-bold text-green-500">Rinterio</a> -->
             <nav class="space-x-4">
                 <a href="#" class="text-gray-700">Home</a>
                 <a href="#" class="text-gray-700">Services</a>
@@ -45,7 +47,14 @@
             <p class="text-gray-500 my-4">The barn house captivates with its blend of rustic charm and modern
                 sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
                 with natural light.</p>
-            <button class="btn max-w-40 mt-4">View Details</button>
+                <button class="btn max-w-40 mt-4 bg-lime-200 rounded-full">
+                    View Details
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-8 bg-lime-500 p-2 rounded-full inline-block text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </button>
+            <!-- <button class="btn max-w-40 mt-4">View Details</button> -->
         </section>
     </header>
     <main>
@@ -110,8 +119,13 @@
                 </div>
             </div>
         </section>
+        <!-- workflow section  -->
         <section class="py-16 bg-white">
+            
             <div class="container mx-auto">
+                <div class="mx-auto text-center">
+                    <h4>How we works</h4>
+                </div>
                 <h2 class="text-3xl font-bold text-center">Our Works Process</h2>
                 <div class="grid lg:grid-cols-4 gap-8 mt-8">
                     <div class="p-5 bg-pink-200 rounded-lg">
@@ -144,14 +158,15 @@
         <section class="py-16 bg-gray-50">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-bold">Our Latest Portfolio</h2>
-                <div class="grid md:grid-cols-3 gap-8 mt-8">
-                    <div class="card bg-white shadow-lg">
-                        <figure><img src="https://via.placeholder.com/600" alt="Portfolio Image"></figure>
-                        <div class="card-body">
+                <div class="grid lg:grid-cols-3 gap-8 mt-8">
+                    <div class="card bg-white shadow-lg grid grid-cols-2 col-span-2">
+                        <figure><img src="./assets/img1.png" alt="Portfolio Image"></figure>
+                        <div class="card-body border border-lime-500">
                             <h4 class="card-title">Commercial</h4>
                             <p>The barn house captivates with its blend of rustic charm and modern.</p>
                             <button class="btn btn-link text-green-500">View Details</button>
                         </div>
+                        <figure><img src="./assets/img1.png" alt="Portfolio Image"></figure>
                     </div>
                 </div>
             </div>
