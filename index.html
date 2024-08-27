@@ -28,19 +28,36 @@
 
 <body>
     <!-- header section  -->
-    <header class="bg-white sm:px-3">
+    <header class="px-3 bg-gray-100" >
         <div class="container mx-auto flex justify-between items-center p-4">
             <a href="#" class="text-2xl font-bold text-black"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-lime-500 p-2 rounded-full inline-block text-white"> <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg> Rinterio </a>
-            <!-- <a href="#" class="text-2xl font-bold text-green-500">Rinterio</a> -->
-            <nav class="space-x-4">
-                <a href="#" class="text-gray-700">Home</a>
+            <nav class="space-x-4 hidden lg:block">
+                <a href="#" class="text-gray-700 font-bold">Home</a>
                 <a href="#" class="text-gray-700">Services</a>
                 <a href="#" class="text-gray-700">Portfolio</a>
                 <a href="#" class="text-gray-700">Blogs</a>
                 <a href="#" class="text-gray-700">Contact Us</a>
             </nav>
             <div>
-                <button class="btn btn-success">Book Consult</button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-10 bg-white p-2 rounded-full text-black hidden md:inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-10 bg-white p-2 rounded-full text-black hidden md:inline-block">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <button class="bg-lime-400 px-4 py-2 rounded-full hidden md:inline-block">
+                    Book Consult
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="size-8 bg-black p-2 rounded-full inline-block text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-10 bg-white p-2 rounded-full inline-block text-black lg:hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
             </div>
         </div>
         <section class="text-center py-16 ">
@@ -56,12 +73,24 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                 </button>
-            <!-- <button class="btn max-w-40 mt-4">View Details</button> -->
         </section>
     </header>
     <main>
-        <section class="py-16 bg-[#f4f4f4]">
+        <!-- About Us Section -->
+        <section class="py-16 bg-[#f4f4f4] px-3">
+            <div class=" lg:pl-20 lg:pt-10 lg:pb-10 hidden md:inline-block">
+                <img src="./assets/Vector.png" alt="">
+            </div>
             <div class="container mx-auto">
+                <div class="mx-auto text-left">
+                    <span class="rounded-full p-3 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-7 rounded-full inline-block text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        About Us
+                    </span>
+                </div>
                 <div class="grid lg:grid-cols-2 gap-10 lg:gap-x-20 mt-8">
                     <div class="space-y-4 lg:mt-14 lg:ml-20">
                         <div>
@@ -97,26 +126,27 @@
                 </div>
             </div>
         </section>
-        <section class="py-16 bg-gray-50 text-center">
+        <!-- happy client section  -->
+        <section class="py-16 bg-gray-50 text-center px-3">
             <div class="container mx-auto grid lg:grid-cols-4 gap-8">
-                <div class="border">
+                <div>
                     <img class="mx-auto" src="./assets/massage.png" alt="">
-                    <h4 class="text-4xl font-bold text-green-500">235+</h4>
+                    <h4 class="text-4xl font-bold">235+</h4>
                     <p class="text-gray-600">Happy Client Review</p>
                 </div>
                 <div>
                     <img class="mx-auto" src="./assets/departement.png" alt="">
-                    <h4 class="text-4xl font-bold text-green-500">50+</h4>
+                    <h4 class="text-4xl font-bold">50+</h4>
                     <p class="text-gray-600">Work Departments</p>
                 </div>
-                <div>
+                <div class="border border-gray-400 border-dashed">
                     <img class="mx-auto" src="./assets/user-group.png" alt="">
-                    <h4 class="text-4xl font-bold text-green-500">30k+</h4>
+                    <h4 class="text-4xl font-bold">30k+</h4>
                     <p class="text-gray-600">Our Happy Clients</p>
                 </div>
                 <div>
                     <img class="mx-auto" src="./assets/user-multiple.png" alt="">
-                    <h4 class="text-4xl font-bold text-green-500">307+</h4>
+                    <h4 class="text-4xl font-bold">307+</h4>
                     <p class="text-gray-600">Staff Members</p>
                 </div>
             </div>
@@ -134,9 +164,6 @@
                         How we works
                     </span>
                 </div>
-                <!-- <div class="mx-auto text-center">
-                    <h4>How we works</h4>
-                </div> -->
                 <h2 class="text-3xl font-bold text-center">Our Works Process</h2>
                 <div class="grid lg:grid-cols-4 gap-8 mt-8">
                     <div class="p-5 bg-pink-200 rounded-lg">
@@ -169,6 +196,15 @@
         <!-- Portfolio section  -->
         <section class="py-16 bg-gray-50">
             <div class="container mx-auto text-center">
+                <div class="mx-auto text-center">
+                    <span class="rounded-full p-3 bg-[#eefcdf] text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-7 rounded-full inline-block text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        Explore our Latest works
+                    </span>
+                </div>
                 <h2 class="text-3xl font-bold">Our Latest Portfolio</h2>
                 <div class="grid lg:grid-cols-3 gap-8 mt-8 border border-black">
                     <div class="card bg-white shadow-lg grid grid-cols-1 lg:grid-cols-2 lg:col-span-2 p-4">
@@ -212,6 +248,15 @@
         <!-- Contact Section -->
         <section class="py-16" style="background-image: url(./assets/bg.jpg);">
             <div class="container mx-auto text-center">
+                <div class="mx-auto text-center">
+                    <span class="rounded-full p-3 bg-[#eefcdf] text-black">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-7 rounded-full inline-block text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        Let’s Connect
+                    </span>
+                </div>
                 <h2 class="text-3xl font-bold">Let’s Discuss Next Project</h2>
                 <p class="text-gray-600 my-4">The barn house captivates with its blend of rustic charm and modern
                     sophistication, featuring weathered wood, sleek metal accents.</p>
@@ -226,7 +271,7 @@
                     </div>
                     <textarea placeholder="Write your message here"
                         class="textarea textarea-bordered w-full lg:h-40"></textarea>
-                    <button class="btn btn-success w-full rounded-full">Send Mail</button>
+                    <button class="btn btn-success w-full bg-[#abef5f] rounded-full">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 p-2 bg-[#1c1c1c] rounded-full inline-block text-white"> <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg></button>
                 </form>
             </div>
         </section>
@@ -234,7 +279,7 @@
     <!-- Footer section -->
     <footer class="bg-black text-white py-8">
         <div class="container mx-auto lg:p-20 text-center">
-            <a href="#" class="text-2xl font-bold text-green-500">Rinterio</a>
+            <a href="#" class="text-2xl font-bold text-white"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-lime-500 p-2 rounded-full inline-block text-black"> <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> </svg> Rinterio </a>
             <nav class="grid lg:grid-cols-5 grid-cols-1 mt-4 space-x-4 space-y-4">
                 <a href="#" class="text-gray-400">Home</a>
                 <a href="#" class="text-gray-400">Services</a>
@@ -242,7 +287,13 @@
                 <a href="#" class="text-gray-400">Blogs</a>
                 <a href="#" class="text-gray-400">Contact Us</a>
             </nav>
-            <button class="btn btn-outline btn-success mt-10">Book Consult</button>
+            <button class="bg-lime-400 px-4 py-2 rounded-full hidden md:inline-block">
+                Book Consult
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-8 bg-black p-2 rounded-full inline-block text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+            </button>
         </div>
     </footer>
 </body>
